@@ -5,8 +5,8 @@ Rails.application.routes.draw do
   post   'login' , to: 'sessions#create'
   delete 'logout', to: 'sessions#destroy'
 
-
   resources :users
+  resources :microposts
 end
 
   # The priority is based upon order of creation: first created -> highest priority.
